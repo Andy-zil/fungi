@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micelium Magia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍄 Micelium Magia</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pesquisa">
+      <h2>🔍 Pesquise um fungo</h2>
+      <input type="text" id="campoBusca" placeholder="Ex: Amanita muscaria" onkeyup="mostrarSugestoes()">
+      <ul id="sugestoes"></ul>
+    </section>
+
+    <section>
+      <h2>🧠 Curiosidades Fúngicas</h2>
+      <p>Descubra espécies alucinantes, medicinais e misteriosas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Micelium Magia — Fascínio pelo Reino Fungi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

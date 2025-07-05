@@ -1,0 +1,16 @@
+const fungosRecentes = ["Amanita muscaria", "Psilocybe cubensis", "Ganoderma lucidum", "Pleurotus ostreatus", "Cordyceps militaris"];
+
+function mostrarSugestoes() {
+  const entrada = document.getElementById("campoBusca").value.toLowerCase();
+  const lista = document.getElementById("sugestoes");
+  lista.innerHTML = "";
+
+  if (entrada.length > 0) {
+    const resultados = fungosRecentes.filter(fungo => fungo.toLowerCase().includes(entrada));
+    resultados.forEach(fungo => {
+      const item = document.createElement("li");
+      item.textContent = fungo;
+      lista.appendChild(item);
+    });
+  }
+}
